@@ -37,7 +37,7 @@ public class FinanstilsynetServiceImpl implements FinanstilsynetService {
 	 */
 	@Override
 	public List<InstrumentShortingHistory> getShortPosition(String isin, String fromDate, String toDate) {
-		log.debug("ISIN is : {}, From Date: {}, To Date: {}", isin, fromDate, toDate);
+		log.debug("ISIN: {}, From Date: {}, To Date: {}", isin, fromDate, toDate);
 
 		List<InstrumentShortingHistory> instrumentListResp = new ArrayList<>();
 		var response = finanstilsynetUtils.getInstrumentDetails();
