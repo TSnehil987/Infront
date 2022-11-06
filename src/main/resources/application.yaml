@@ -1,0 +1,12 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /instrumentmgmt
+    
+logging:
+  level:
+    com.infront.javaassessment: DEBUG
+
+finanstilsynet:
+  instruments:
+    url: https://ssr.finanstilsynet.no/api/v2/instruments/
